@@ -1,0 +1,35 @@
+>>> 4
+4
+>>> type(4)
+<type 'int'>
+>>> 
+================= RESTART: C:/Python27/MyWork/book_2_2_3.py =================
+>>> import urllib2
+target_url=("https://archive.ics.uci.edu/ml/machine-learning-"
+"databases/undocumented/connectionist-bench/sonar/sonar.all-data")
+data = urllib2.urlopen(target_url)
+type(data)
+>>> 
+>>> import urllib2
+>>> target_url=("https://archive.ics.uci.edu/ml/machine-learning-"
+"databases/undocumented/connectionist-bench/sonar/sonar.all-data")
+>>> data = urllib2.urlopen(target_url)
+>>> type(data)
+<type 'instance'>
+>>> data.geturl()
+'https://archive.ics.uci.edu/ml/machine-learning-databases/undocumented/connectionist-bench/sonar/sonar.all-data'
+>>> urldata=data.geturl()
+>>> urldata
+'https://archive.ics.uci.edu/ml/machine-learning-databases/undocumented/connectionist-bench/sonar/sonar.all-data'
+>>> type(urldata)
+<type 'str'>
+>>> 
+================= RESTART: C:/Python27/MyWork/book_2_2_3.py =================
+
+Traceback (most recent call last):
+  File "C:/Python27/MyWork/book_2_2_3.py", line 7, in <module>
+    file_obj.write(data_info)
+TypeError: expected a string or other character buffer object
+>>> data.info()
+<httplib.HTTPMessage instance at 0x000000000309D988>
+>>> 
