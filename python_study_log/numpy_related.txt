@@ -1,0 +1,10 @@
+>>> import numpy as np
+>>> a=[1,2,3]
+>>> b=np.array(a)
+>>> b
+array([1, 2, 3])
+>>> type(b)
+<type 'numpy.ndarray'>
+>>> b.shape
+(3L,)
+>>>
