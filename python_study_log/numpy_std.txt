@@ -1,0 +1,35 @@
+>>> import numpy
+>>> numpy.array([1,2,3])
+array([1, 2, 3])
+>>> a=numpy.array([1,2,3])
+>>> b=numpy.mean(a)
+>>> b
+2.0
+>>> c=numpy.std(a)
+>>> c
+0.81649658092772603
+>>> import sys
+>>> sys.stdout.write("oh yes!")
+oh yes!
+>>> type(b)
+<type 'numpy.float64'>
+>>> bstr=str(b)
+>>> type(bstr)
+<type 'str'>
+>>> sys.stdoutwrite("dd"+str(c))
+
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    sys.stdoutwrite("dd"+str(c))
+AttributeError: 'module' object has no attribute 'stdoutwrite'
+>>>  sys.stdout.write("dd"+str(c))
+ 
+  File "<pyshell#13>", line 2
+    sys.stdout.write("dd"+str(c))
+    ^
+IndentationError: unexpected indent
+>>> sys.stdout.write("dd"+str(c))
+dd0.816496580928
+>>> sys.stdout.write("dd"+'\t'+str(c))
+dd	0.816496580928
+>>> 
