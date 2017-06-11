@@ -1,0 +1,61 @@
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> range(5)
+[0, 1, 2, 3, 4]
+>>> import numpy
+>>> a=[1,1,1,2]
+>>> b=numpy.array(a)
+>>> b
+array([1, 1, 1, 2])
+>>> c=percentile(b,75)
+
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    c=percentile(b,75)
+NameError: name 'percentile' is not defined
+>>> c=numpy.percentile(b,75)
+>>> c
+1.25
+>>> c=numpy.percentile(b,25)
+>>> c
+1.0
+>>> a=[15,20,35,40,50]
+>>> b=numpy.array(a)
+>>> b
+array([15, 20, 35, 40, 50])
+>>> c=numpy.percentile(b,5)
+>>> c
+16.0
+>>> c=numpy.percentile(b,30)
+>>> c
+23.0
+>>> c=numpy.percentile(b,100)
+>>> c
+50.0
+>>> c=numpy.percentile(b,99);print c
+49.6
+>>> a=[1,1,1,2]; b=numpy.array(a);c=percentile(b,75);print c
+
+Traceback (most recent call last):
+  File "<pyshell#20>", line 1, in <module>
+    a=[1,1,1,2]; b=numpy.array(a);c=percentile(b,75);print c
+NameError: name 'percentile' is not defined
+>>>  c=numpy.percentile(b,75);print c
+ 
+  File "<pyshell#21>", line 2
+    c=numpy.percentile(b,75);print c
+    ^
+IndentationError: unexpected indent
+>>> 
+KeyboardInterrupt
+>>> c=numpy.percentile(b,75);print c
+1.25
+>>> c=numpy.percentile(b,74);print c
+1.22
+>>> c=numpy.percentile(b,50);print c
+1.0
+>>> c=numpy.percentile(b,60);print c
+1.0
+>>> c=numpy.percentile(b,100);print c
+2.0
+>>> 
