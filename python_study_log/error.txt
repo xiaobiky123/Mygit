@@ -1,0 +1,75 @@
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> pow(2,0)
+1
+>>> pow(2,3)
+8
+>>> 5/2
+2
+>>> float(3)
+3.0
+>>> float(3)/float(2)
+1.5
+>>> float(3)/float(23)
+0.13043478260869565
+>>> a=[1,2,3]
+>>> for i in a:
+	print i
+
+	
+1
+2
+3
+>>> 
+================= RESTART: C:/Python27/MyWork/simple_math.py =================
+
+Traceback (most recent call last):
+  File "C:/Python27/MyWork/simple_math.py", line 5, in <module>
+    test([1,2,3])
+  File "C:/Python27/MyWork/simple_math.py", line 3, in test
+    summ=summ+pow(k,2)
+UnboundLocalError: local variable 'summ' referenced before assignment
+>>> 
+================= RESTART: C:/Python27/MyWork/simple_math.py =================
+
+Traceback (most recent call last):
+  File "C:/Python27/MyWork/simple_math.py", line 6, in <module>
+    test([1,2,3])
+  File "C:/Python27/MyWork/simple_math.py", line 4, in test
+    summ=summ+pow(k,2)
+TypeError: unsupported operand type(s) for ** or pow(): 'list' and 'int'
+>>> 
+================= RESTART: C:/Python27/MyWork/simple_math.py =================
+
+Traceback (most recent call last):
+  File "C:/Python27/MyWork/simple_math.py", line 6, in <module>
+    test([1,2,3])
+  File "C:/Python27/MyWork/simple_math.py", line 3, in test
+    for k in range(input_list):
+TypeError: range() integer end argument expected, got tuple.
+>>> a=(1,2,3)
+>>> range(a)
+
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    range(a)
+TypeError: range() integer end argument expected, got tuple.
+>>> for k in a
+SyntaxError: invalid syntax
+>>> for k in a:
+	print k
+
+	
+1
+2
+3
+>>> type(k)
+<type 'int'>
+>>>  for k in a:
+	print k*k
+	
+  File "<pyshell#17>", line 2
+    for k in a:
+    ^
+IndentationError: unexpected indent
+>>> 
