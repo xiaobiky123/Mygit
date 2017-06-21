@@ -5,3 +5,4 @@ def test(*input_list):
     print summ
 test([1,2,3])
     
+ERROR!!! TO REDIFINE!!
