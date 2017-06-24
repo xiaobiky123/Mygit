@@ -12,10 +12,10 @@ def k_order_moment_about_the_origin(input_list,k):
     print "ju=%f" % ju
     return ju
 
-input_list=[210,243,185,240,215,228,196,235,200,199]        
-output=k_order_moment_about_the_origin(input_list,2)
+input_list=[1050, 1100,	1080,	1120,	1200,	1250,	1040,	1130,	1300, 1200]        
+output=k_order_moment_about_the_origin(input_list,1)
 print "the_k_order_moment_about_the_origin = %f" %output
-    
+
 
 def k_order_central_moment(input_list,k):
     summ=0
@@ -41,6 +41,6 @@ def k_order_central_moment(input_list,k):
     print "ave=%f" % ave
     return  cent_mom
 
-input_list=[210,243,185,240,215,228,196,235,200,199]        
+input_list=[1050, 1100,	1080,	1120,	1200,	1250,	1040,	1130,	1300, 1200]        
 output=k_order_central_moment(input_list,2)
 print "k_order_central_moment = %f" %output
